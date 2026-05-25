@@ -1,13 +1,36 @@
-Aprendizajes de overthewire - bandit
+# Bandit 0 → 1
+# TIP: El archivo está en el directorio home
+cat readme
 
-https://overthewire.org/wargames/bandit/bandit1.html
-Solo tuve que usar cat
+# Bandit 1 → 2
+# TIP: El nombre del archivo empieza con guión, usa ./ o comillas
+cat ./-
 
-https://overthewire.org/wargames/bandit/bandit2.html
-Solamente use ls -a para obtener todo y luego use el cat para solucionarlo
+# Bandit 2 → 3
+# TIP: Usa comillas para nombres con espacios
+cat "spaces in this filename"
 
-https://overthewire.org/wargames/bandit/bandit3.html
-Hice exactamente lo mismo que arriba ls -a y luego cat -- de lo que necesitaba
+# Bandit 3 → 4
+# TIP: Usa ls -la para ver archivos ocultos
+cd inhere
+cat .hidden
 
+# Bandit 4 → 5
+# TIP: Usa file para ver qué tipo de archivo es cada uno
+cd inhere
+file ./*
+cat ./-file07
 
+# Bandit 5 → 6
+# TIP: Usa find con -size para buscar por tamaño exacto
+cd inhere
+find . -type f -size 1033c
+cat ./maybehere07/.file2
 
+# Bandit 6 → 7
+# TIP: Usa find / con -user, -group y -size combinados
+find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
+
+# Bandit 7 → 8
+# TIP: Usa grep para buscar una palabra específica en un archivo grande
+grep "millionth" data.txt
