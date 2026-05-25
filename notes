@@ -35,5 +35,9 @@ find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
 # TIP: Usa grep para buscar una palabra específica en un archivo grande
 grep "millionth" data.txt
 
+# Bandit 8 → 9
 # TIP: Uso sort para ordenar la data y luego uniq -u para sacar el valor unico
 sort data.txt | uniq -u
+# Bandit 9 → 10
+# tip: Basicamente converti el texto en algo legible, luego use un tunel para la informacion pasarla con grep para obtener solamente el texto que vaya despues del === que es la coincidencia que vi
+strings data.txt | grep "==="
