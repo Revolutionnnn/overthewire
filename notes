@@ -46,4 +46,6 @@ strings data.txt | grep "==="
 # tip: este fue facil solamente era decodear un base64 busque en google y me aparecio el comando
 base64 -d data.txt
 
-
+# Bandit Level 11 → Level 12
+En esta no supe muy bien como se hace realmente entendi es ROT13 basicamente rota las palabras del abecedario, con cat lei y con tr traduje la data ROT13
+cat data.txt | tr 'a-zA-Z' 'n-za-mN-ZA-M'
