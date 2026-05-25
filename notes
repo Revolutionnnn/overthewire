@@ -34,3 +34,6 @@ find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
 # Bandit 7 → 8
 # TIP: Usa grep para buscar una palabra específica en un archivo grande
 grep "millionth" data.txt
+
+# TIP: Uso sort para ordenar la data y luego uniq -u para sacar el valor unico
+sort data.txt | uniq -u
