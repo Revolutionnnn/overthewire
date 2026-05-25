@@ -41,3 +41,9 @@ sort data.txt | uniq -u
 # Bandit 9 → 10
 # tip: Basicamente converti el texto en algo legible, luego use un tunel para la informacion pasarla con grep para obtener solamente el texto que vaya despues del === que es la coincidencia que vi
 strings data.txt | grep "==="
+
+# Bandit 10 → 11
+# tip: este fue facil solamente era decodear un base64 busque en google y me aparecio el comando
+base64 -d data.txt
+
+
