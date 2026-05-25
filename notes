@@ -1,0 +1,13 @@
+Aprendizajes de overthewire - bandit
+
+https://overthewire.org/wargames/bandit/bandit1.html
+Solo tuve que usar cat
+
+https://overthewire.org/wargames/bandit/bandit2.html
+Solamente use ls -a para obtener todo y luego use el cat para solucionarlo
+
+https://overthewire.org/wargames/bandit/bandit3.html
+Hice exactamente lo mismo que arriba ls -a y luego cat -- de lo que necesitaba
+
+
+
